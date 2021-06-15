@@ -8,8 +8,8 @@ export default function Header({weather, city}) {
         <CityName>{city}</CityName>
         <Description>{weather.current.weather[0].description}</Description>
         <Row>
-          <Min>L:{parseInt(weather.daily[0].temp.min, 10)} Fº</Min>
-          <Max>H:{parseInt(weather.daily[0].temp.max, 10)} Fº</Max>
+          <Min>L:{parseInt(weather.daily[0].temp.min, 10)} Cº</Min>
+          <Max>H:{parseInt(weather.daily[0].temp.max, 10)} Cº</Max>
         </Row>
       </Col>
       <Col>
@@ -20,7 +20,7 @@ export default function Header({weather, city}) {
             }}
           />
         </WeatherIconContainer>
-        <Temperature>{parseInt(weather.current.temp, 10)} Fº</Temperature>
+        <Temperature>{parseInt(weather.current.temp, 10)} Cº</Temperature>
       </Col>
     </Container>
   );

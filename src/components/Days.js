@@ -20,10 +20,10 @@ export default function Days({list}) {
             <Description>{item.weather[0].description}</Description>
             <Row>
               <MinContainer>
-                <Min>L:{parseInt(item.temp.min, 10)}ºF</Min>
+                <Min>L:{parseInt(item.temp.min, 10)}Cº</Min>
               </MinContainer>
               <MaxContainer>
-                <Max>H:{parseInt(item.temp.max, 10)}ºF</Max>
+                <Max>H:{parseInt(item.temp.max, 10)}Cº</Max>
               </MaxContainer>
             </Row>
           </Col>

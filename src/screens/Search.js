@@ -17,7 +17,9 @@ export default function Search({navigation}) {
     }, []),
   );
   const getGeo = async () => {
+    console.log(city);
     const result = await geo(city);
+    console.log(result);
     if (result.lat && result.lng) {
       getData(result.lat, result.lng);
     } else {
